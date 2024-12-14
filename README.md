@@ -14,6 +14,11 @@ git clone https://github.com/manikandanrb/tv-show-app.git
 # Navigate to the project directory
 cd yourproject
 
+# Build the backend
+mvn clean package
+
 # Run docker compose
 docker compose up -d --build
+
+# To see shows, please upload the text file.
 ```
