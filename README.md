@@ -21,5 +21,5 @@ mvn clean package
 docker compose up -d --build
 
 # To see shows, please upload the text file.
-[tvtitles.txt](./tvtitles.txt)
+[tvtitles.txt](https://github.com/manikandanrb/tv-show-app/blob/main/tvtitles.txt)
 ```
