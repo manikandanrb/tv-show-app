@@ -12,7 +12,7 @@ Instructions on how to set up your project.
 git clone https://github.com/manikandanrb/tv-show-app.git
 
 # Navigate to the project directory
-cd yourproject
+cd tv-show-app
 
 # Build the backend
 mvn clean package
