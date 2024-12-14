@@ -1,0 +1,33 @@
+spring:
+  servlet:
+    multipart:
+      enabled: true
+      max-file-size: 2MB
+      max-request-size: 2MB
+  datasource:
+    url: jdbc:h2:mem:tvshowsdb
+    username: sa
+    password: password
+    driverClassName: org.h2.Driver
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    hibernate:
+      ddl-auto: update
+  h2:
+    console:
+      enabled: true
+      path: /h2-console
+
+tvmaze:
+  api:
+    base-url: https://api.tvmaze.com
+
+
+logging:
+  level:
+    org.springframework.web: DEBUG
+    com.tvshows.controller: INFO
+  file:
+    name: logs/application.log
+  pattern:
+    console: "%d{yyyy-MM-dd HH:mm:ss} - %msg%n"
