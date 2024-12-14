@@ -9,9 +9,9 @@ interface ShowGridProps {
 export function ShowGrid({ shows, onShowSelect }: ShowGridProps) {
   return (
     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-      {shows.map((show) => (
+      {shows.map((show, index) => (
         <ShowCard
-          key={show.id}
+          key={`${show.id}-${index}`}
           show={show}
           onClick={() => onShowSelect(show)}
         />

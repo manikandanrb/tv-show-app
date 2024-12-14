@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useDropzone } from 'react-dropzone';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { uploadMovies } from '../api/tvShowsApi';
 
 function MovieUpload() {
@@ -39,8 +39,14 @@ function MovieUpload() {
   return (
     <div className="min-h-screen bg-gray-50">
       <header className="bg-white shadow-md">
-        <div className="max-w-7xl mx-auto px-4 py-6">
-          <h1 className="text-3xl font-bold text-gray-900">Drag and Drop File Upload</h1>
+        <div className="flex justify-between items-center max-w-7xl mx-auto px-4 py-6">
+          <h1 className="text-3xl font-bold text-gray-900">Upload TV Shows</h1>
+          <Link
+            to="/"
+            className="text-blue-600 font-semibold hover:underline transition duration-300 ease-in-out"
+          >
+            Back to Home
+          </Link>
         </div>
       </header>
 
